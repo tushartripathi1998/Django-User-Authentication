@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>The Index</title>
+    </head>
+
+    <body>
+        <h1>This is the index page!</h1>
+        {% if user.is_authenticated %}
+        <p>Your name is : {{ user.username }}</p>
+        {% else %}
+        <p>Hola, you aren't registered!</p>
+        {% endif %}
+    </body>
+</html>
